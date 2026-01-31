@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Verify Document</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow-x: hidden;
+            background: #f0f0f0;
+        }
+
+        #pdf-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            width: 100%;
+            min-height: 100%;
+            overflow-y: auto;
+        }
+
+        img {
+            width: 100%;        /* Fill width */
+            height: auto;       /* Keep aspect ratio */
+            max-width: none;    /* Remove any max width */
+            display: block;
+            margin: 0;          /* No extra margins */
+        }
+    </style>
+</head>
+<body>
+    <div id="pdf-container">
+        {% for img_url in images %}
+            <img src="{{ img_url }}" alt="PDF page {{ forloop.counter }}">
+        {% endfor %}
+    </div>
+</body>
+</html>
