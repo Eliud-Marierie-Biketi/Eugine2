@@ -1,1 +1,1 @@
-web: gunicorn krnaa.wsgi
+web: gunicorn krna_ecitizen_go_ke.wsgi
