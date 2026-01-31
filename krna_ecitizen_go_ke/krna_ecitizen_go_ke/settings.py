@@ -17,16 +17,14 @@ SECRET_KEY = 'django-insecure-#2+d$+r@0&!=u^&k12awj4d2bd*4(e%g(3)i5^j)%sa8-#*dz4
 DEBUG = os.environ.get("DJANGO_DEBUG", "False") == "True"
 
 ALLOWED_HOSTS = [
-   
+    "knra-ecitizen-co-ke-24c56417426a.herokuapp.com",
     "localhost",
     "127.0.0.1",
-    "knraa-9ea58e8b604b.herokuapp.com"
-    '*'
 ]
 
+
 CSRF_TRUSTED_ORIGINS = [
-    "https://knraa.co.ke",
-    "https://www.knraa.co.ke",
+    "https://knra-ecitizen-co-ke-24c56417426a.herokuapp.com"
 ]
 
 
